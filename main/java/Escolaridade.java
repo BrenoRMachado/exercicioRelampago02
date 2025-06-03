@@ -1,22 +1,16 @@
 public class Escolaridade {
 
-    private boolean mestrado;
-    private boolean doutorado;
+    private String posGraduacao;
 
-
-    public boolean getMestrado() {
-        return this.mestrado;
+    public String getPosGraduacao() {
+        return this.posGraduacao;
     }
 
-    public void setMestrado(boolean mestrado) {
-        this.mestrado = mestrado;
-    }
-
-    public boolean getDoutorado() {
-        return this.doutorado;
-    }
-
-    public void setDoutorado(boolean doutorado) {
-        this.doutorado = doutorado;
+    public void setPosGraduacao(String posGraduacao) {
+        if(!posGraduacao.equalsIgnoreCase("DOUTORADO") && !posGraduacao.equalsIgnoreCase("MESTRANDO"))
+        {
+            throw new IllegalArgumentException("A graduação deve ser doutorado ou mestrado");
+        }
+        this.posGraduacao = posGraduacao;
     }
 }
