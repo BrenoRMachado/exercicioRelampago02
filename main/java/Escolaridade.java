@@ -2,6 +2,11 @@ public class Escolaridade {
 
     private String posGraduacao;
 
+    Escolaridade(String posGraduacao)
+    {
+        setPosGraduacao(posGraduacao);
+    }
+
     public String getPosGraduacao() {
         return this.posGraduacao;
     }
