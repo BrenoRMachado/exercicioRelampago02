@@ -6,6 +6,7 @@ public class Pessoa {
     Pessoa(String nome)
     {
         setNome(nome);
+        this.escolaridade = null;
     }
 
     public String getNome() {
@@ -18,5 +19,13 @@ public class Pessoa {
             throw new IllegalArgumentException("O nome não pode estar vazio!");
         }
         this.nome = nome;
+    }
+
+    public Escolaridade getEscolaridade() {
+        return this.escolaridade;
+    }
+
+    public void setEscolaridade(Escolaridade escolaridade) {
+        this.escolaridade = escolaridade;
     }
 }
