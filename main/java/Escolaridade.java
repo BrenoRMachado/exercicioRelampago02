@@ -4,7 +4,7 @@ public class Escolaridade {
     private boolean doutorado;
 
 
-    public boolean isMestrado() {
+    public boolean getMestrado() {
         return this.mestrado;
     }
 
@@ -12,7 +12,7 @@ public class Escolaridade {
         this.mestrado = mestrado;
     }
 
-    public boolean isDoutorado() {
+    public boolean getDoutorado() {
         return this.doutorado;
     }
 
